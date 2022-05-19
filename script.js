@@ -33,7 +33,6 @@ const callBackModal = (obj) => {
 };
 
 const renderCard = (obj) => {
-	console.log(obj.id);
 	const frag = document.createRange().createContextualFragment(`
         <div class="card text-center my-3">
             <div class="card-header">
@@ -57,7 +56,6 @@ const renderCard = (obj) => {
 };
 
 const renderPage = (arr, start, limit) => {
-	console.log(start, limit);
 	const area = $('#area');
 	area.innerHTML = '';
 	for (let i = start; i < start + limit; i++) {
@@ -68,6 +66,13 @@ const renderPage = (arr, start, limit) => {
 
 renderPagination(
 	[
+		{ id: 1 },
+		{ id: 2 },
+		{ id: 3 },
+		{ id: 4 },
+		{ id: 5 },
+		{ id: 6 },
+		{ id: 7 },
 		{ id: 1 },
 		{ id: 2 },
 		{ id: 3 },
